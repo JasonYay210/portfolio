@@ -1,349 +1,1616 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Jason Chen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">jchendev.com // System Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="5">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="6">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" vid="7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" vid="7b">
+    <style vid="8">
+        :root {
+            --c-ink: #1a1a1a;
+            --c-paper: #F2EFE4;
+            --c-white: #ffffff;
+            --c-teal: #A8D8D8;
+            --c-beige-stripe: #F9F4D8;
+            --c-shadow: rgba(26, 26, 26, 0.15);
+            
+            --border-width: 2.5px;
+            --radius-window: 12px;
+            --radius-btn: 4px;
+            
+            --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Jason</a></li>
-							<li><a href="#one">Experience</a></li>
-							<li><a href="#two">Projects</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        body {
+            background-color: #2c001e;
+            background-image: url("linux_default_image.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: var(--c-ink);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Jason Chen</h1>
-							<p>	
-									<h4>Operating System:</h4> Windows 10&11, MacOS<br>                                                                       
-									<h4>Language:</h4>Python3, C, C++, Java, HTML5, CSS, JavaScript, TypeScript, PHP, C#<br>
-									<h4>Technology and Tools:</h4> Angular, React, Next.js, Vite, Flutter, Material UI, Tailwind CSS, ASP.NET, Firebase, MS SQL 
-									Server, MySQL, PostgreSQL, MongoDB, Neo4j, Azure, Pandas, XML/Schema, YAML, JSON, GitHub Actions <br>	                                       
-									<h4>Software:</h4>  VS Code, Visual Studio, FileZilla, MySQL Workbench, Command Line, Docker, GitHub, Colab, Postman, 
-									Adobe Photoshop & Illustrator, Figma 
-							</p>
-							<ul class="icons">
-								<li><a href="https://github.com/JasonYay210" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/jason-rit/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-						<!--
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						-->
-						</div>
-					</section>
-			<!-- one -->
-			<section id="one" class="wrapper style3 fade-up">
-				<div class="inner">
-					<h2>Experience</h2>
-					<p>I am currently looking for a Co-op for 2025</p>
-					<div class="features">
-						<section>
-							<span class="icon solid major fa-link"></span>
-							<h3>Full Stack Engineer | <span style="font-style: italic; color: gray;">TigerSnackBox</span></h3>
-							<p> 
-								● Developing a C# Unity game with a Figma-designed UI, following Scrum Agile and collaborating via Jira, 
-								slack, and Confluence with a focus on performance and user experience <br>
-								● Using GitHub Actions for CI/CD automation and working towards App Store deployment 
-							</p>
-						</section>
-							<section>
-								<span class="icon solid major fa-link"></span>
-							<h3>Full Stack engineer Freelance | <span style="font-style: italic; color: gray;">Sigmath Multiservices</span></h3>
-								<p> 
-									● Developed a React Native app using TypeScript, Firebase, Node.js and Redux, integrating 20+ reusable 
-									components to streamline development, enhance scalability, and improve state management <br>
-									● Designed a 15+ page Figma template to streamline design-to-development handoff, leveraging Trello for 
-									task management and following the Scrum process for iterative development and team collaboration 
-								</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-link"></span>
-							<h3>Full Stack Developer Coop | <span style="font-style: italic; color: gray;">D&D Motor Systems Inc.</span></h3>
-								<p> 
-									● Led a website redesign using survey feedback and Google Analytics, implementing full-stack automation 
-									tools to streamline workflows and reduce errors. Boosted SEO performance by 70%,  site efficiency and 
-									engagement rate by 40% <br>
-									● Revamped the backend across 75+ webpages using PHP, SQL, and JavaScript, reducing load times to below 
-									2 seconds while optimizing data management, server performance, and user engagement  
-								</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-code"></span>
-							<h3>Software Engineering Fellowship | <span style="font-style: italic; color: gray;">Headstarter Ai</span></h3>
-								<p>
-									● Built and deployed 5 AI projects in 5 weeks using React.js, Next.js, Tailwind CSS, Firebase, Vercel, and AWS 
-									EC2, following agile methodologies with weekly sprints and incorporated CI/CD practices <br>
-									● Coached by Amazon, Google, and Capital One on Agile, CI/CD, git, and microservice patterns <br>
-									● Led 4+ engineering fellows in developing projects from design to deployment using MVC design patterns 
-							</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-desktop"></span>
-							<h3>AI Writing Evaluator (Tier 2) | <span style="font-style: italic; color: gray;">Outlier</span></h3>
-								<p>
-									● Assess the quality of AI-generated writing based on rubrics such as factuality, completeness, brevity, and grammatical correctness<br>
-									Review and provide feedback on the work of other writers<br>
-									● Create high-quality original responses to prompts to guide the AI model's responses<br>
-									● Gain experience in the field of AI and contribute to the improvement of AI models<br>
-								</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-link"></span>
-							<h3>Volunteer | <span style="font-style: italic; color: gray;">Queens Botanical Garden</span></h3>
-								<p>
-									● Ensured a safe environment by engaging with guests about rules<br>
-									● Cultivated a welcoming environment by managing weeds, flowers, and chickens<br>
-									● Conducted multiple tours around the garden for new guests during the winter event<br>
-								</p>
-						</section>
-						
-					<!--</div>
-				 <ul class="actions">
-						<li><a href="generic.html" class="button">Learn more</a></li>
-					</ul>
-				</div> -->
-			</section>
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(119, 33, 111, 0.2) 0%, rgba(44, 0, 30, 0.3) 50%, rgba(233, 84, 32, 0.15) 100%);
+            pointer-events: none;
+            z-index: 999;
+        }
 
-				<!-- two -->
-					<section id="two" class="wrapper style2 spotlights">
-						<section>
-							<a href="https://github.com/JasonYay210/Stripe-AiFlashcards" class="image"><img src="images/ai_flashcards.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>AI Flashcards</h2>
-										<p>
-											● Utilized Firebase for real-time database management and storage of flashcard decks, leveraged Groq AI to
-											generate personalized flash cards based on user input, and developed a responsive and user-friendly
-											front-end with Next.js and MUI<br>
-											● Implemented secure payment processing using Stripe and integrated Clerk for user authentication and
-											login functionality																			
-										</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://colab.research.google.com/drive/19BdYXkiL6oJigvfIQ8Nt64DY3Rh03G_i?usp=sharing" class="image"><img src="images/colab.JPG" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>AI Algorithm Trading Bot</h2>
-										<p>
-											● Developed an AI Algorithm Trading Bot using Python, Pandas, and TensorFlow<br>	
-											● Utilizes LSTM (Neural Network) and unsupervised learning for stock prediction, with results visualized using matplotlib<br>
-											● Advancing skills in Python, Artificial intelligence, algorithms, and data manipulation																				
-										</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://github.com/JasonYay210/customer-support-ai" class="image"><img src="images/ai_chatbot.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>AI Chatbot</h2>
-									<p>
-										● Leveraged Groq AI to generate personalized responses based on user input, 
-										allowing for dynamic adjustments to the AI's purpose through customizable system prompts.
-										Developed a responsive and user-friendly front-end with Next.js and Material-UI (MUI) to enhance 
-										the user experience															
-									</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://people.rit.edu/jc3496/ISTE340/p2_Jason_Chen/" class="image"><img src="images/react.JPG" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>React Website</h2>
-										<p>
-											● Developed a professional website for the iSchool by fetching data from Ischool's web service API using a proxy server<br>
-											● Used React hooks for managing state and side effects in the application<br>
-											● Utilized Material-UI components for designing and implementing user-friendly interfaces										
-										</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://www.linkedin.com/posts/jason-rit_hackathon-webscraping-puppeteer-activity-7231061223113461760-qd-h/?utm_source=share&utm_medium=member_desktop" class="image"><img src="images/web_scrapper.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Web Scrapper</h2>
-									<p>
-										● Assisted in the implementation of the web scraper logic and improved upon it, allowing for scraping of diverse websites<br>
-										● Integrated MongoDB to store and manage the scraped data																			
-									</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://github.com/JasonYay210/Digital-Library" class="image"><img src="images/digital_library.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Digital Library</h2>
-										<p>
-											● Developed a database application for an academic department to facilitate collaboration between faculty and student researchers using search functionalities with keywords<br>
-											● Implemented a system using abstract methods to store abstracts of faculty and student research interests, creating a small-scale digital library<br>
-											● Adapted JDBC for MySQL database connectivity, executing SQL operation and handling exceptions effectively<br>
-											● Ensuring security through password encryption using the SHA-1 hashing algorithm for user login																				
-										</p>
+        
+        .os-window {
+            background: #f9f9fb;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1000px;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            overflow-x: hidden;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
 
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://www.youtube.com/shorts/WvLEp99kt80" class="image"><img src="images/flutter.JPG" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Flutter YouTube App</h2>
-										<p>
-											● Implemented HTTP requests for data retrieval and JSON parsing<br>
-											● Incorporated the youtube_player_flutter plugin for video playback, details, and thumbnails and the Google Cloud API key for the search functionality<br>
-											● Developed features for searching videos, managing favorites, and viewing history<br>
-											● Ensured cross-platform compatibility using both Android and IOS emulators
-										</p>
+        .os-window.intro-hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translate(-50%, -50%) scale(0.85);
+        }
 
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://github.com/JasonYay210/MVC-Ischool" class="image"><img src="images/mvc_project.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>MVC Website</h2>
-										<p>
-											● Developed a C# front-end application using the MVC (Model-View-Controller) architectural pattern in Visual Studio<br>
-											● Developed a C# frontend application to consume data from a RESTful web service<br>
-											● Incorporated jQuery, BootStrap, and Datatables plugins for UI enhancements										
-										</p>
+        .title-bar {
+            height: 40px;
+            background: #2d2d2d;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            cursor: move;
+            user-select: none;
+            border-radius: 8px 8px 0 0;
+        }
 
-								</div>
-							</div>
-						</section>
+        .firefox-tabs {
+            display: flex;
+            flex: 1;
+            align-items: flex-end;
+            height: 100%;
+            padding-left: 8px;
+            gap: 2px;
+        }
+
+        .firefox-tab {
+            background: #4a4a4f;
+            color: #b1b1b3;
+            padding: 8px 16px;
+            border-radius: 8px 8px 0 0;
+            font-size: 0.85rem;
+            font-family: var(--font-sans);
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+            max-width: 240px;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+        }
+
+        .firefox-tab.active {
+            background: #f9f9fb;
+            color: #0c0c0d;
+        }
+
+        .firefox-tab-icon {
+            width: 16px;
+            height: 16px;
+            background: #b1b1b3;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .firefox-tab.active .firefox-tab-icon {
+            background: #0c0c0d;
+        }
+
+        .firefox-tab-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex: 1;
+        }
+
+        .firefox-address-bar {
+            height: 40px;
+            background: #f9f9fb;
+            border-bottom: 1px solid #d7d7db;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .firefox-nav-buttons {
+            display: flex;
+            gap: 4px;
+        }
+
+        .firefox-nav-btn {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0c0c0d;
+            font-size: 0.9rem;
+            transition: background 0.15s ease;
+        }
+
+        .firefox-nav-btn:hover {
+            background: #e0e0e2;
+        }
+
+        .firefox-url-bar {
+            flex: 1;
+            height: 32px;
+            background: #fff;
+            border: 1px solid #d7d7db;
+            border-radius: 4px;
+            padding: 0 12px;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            color: #0c0c0d;
+            display: flex;
+            align-items: center;
+        }
+
+        .firefox-url-bar::before {
+            content: 'jchendev.com';
+            color: #737373;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 6px;
+            padding: 0 8px;
+            align-items: center;
+        }
+
+        .control-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #5a5a5e;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .control-dot:hover {
+            background: #737373;
+        }
+
+        .control-dot:nth-child(1) {
+            background: #ff5f57;
+        }
+
+        .control-dot:nth-child(1):hover {
+            background: #ff3b30;
+        }
+
+        .control-dot:nth-child(2) {
+            background: #ffbd2e;
+        }
+
+        .control-dot:nth-child(2):hover {
+            background: #ff9500;
+        }
+
+        .control-dot:nth-child(3) {
+            background: #28ca42;
+        }
+
+        .control-dot:nth-child(3):hover {
+            background: #1db954;
+        }
+
+        
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 240px;
+            border-right: 1px solid #d7d7db;
+            background: #f9f9fb;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            gap: 2rem;
+            overflow-y: auto;
+        }
+
+        .main-view {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 3rem;
+            background: #fff; 
+        }
+
+        
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .nav-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0.6;
+            margin-bottom: 4px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--c-ink);
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 8px;
+            border: 2px solid transparent;
+            border-radius: var(--radius-btn);
+            transition: all 0.2s ease;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: #fff;
+            border-color: #0a84ff;
+            box-shadow: 0 0 0 2px #0a84ff;
+            transform: none;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #d7d7db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            background: #fff;
+            font-size: 0.75rem;
+        }
+
+        .nav-icon i {
+            color: #0c0c0d;
+        }
+
+        .nav-item.active .nav-icon {
+            background: #0a84ff;
+            border-color: #0a84ff;
+        }
+
+        .nav-item.active .nav-icon i {
+            color: #fff;
+        }
+
+        
+        h1 {
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: var(--c-ink);
+            opacity: 0.2;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 60ch;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 2rem;
+        }
+
+        .card {
+            border: var(--border-width) solid var(--c-ink);
+            border-radius: var(--radius-btn);
+            background: var(--c-paper);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--c-ink);
+        }
+
+        .card-image {
+            height: 160px;
+            border-bottom: var(--border-width) solid var(--c-ink);
+            background: var(--c-teal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a.card-image:hover {
+            opacity: 0.95;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            font-family: var(--font-mono);
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+
+        .tag-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border: 1.5px solid var(--c-ink);
+            border-radius: 4px;
+            background: var(--c-white);
+        }
+
+        .tag-row a.tag {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .tag-row a.tag:hover {
+            text-decoration: underline;
+        }
+
+        .about-icons {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 0;
+        }
+
+        .about-icons a {
+            color: var(--c-ink);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .about-icons a:hover {
+            color: var(--c-teal);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .about-icons .label {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .experience-item {
+            border: var(--border-width) solid var(--c-ink);
+            border-radius: var(--radius-btn);
+            background: var(--c-paper);
+            padding: 1.25rem;
+            transition: transform 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--c-ink);
+        }
+
+        .experience-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.5rem 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .experience-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .experience-company {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        .experience-date {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            margin-left: auto;
+            opacity: 0.7;
+        }
+
+        .experience-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .experience-desc ul {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0 0 0 3px;
+        }
+
+        .experience-desc li {
+            margin-bottom: 0.35rem;
+        }
+
+        .stack-content {
+            margin-top: 1.5rem;
+        }
+
+        .stack-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .stack-category {
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--c-ink);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            padding: 0 1.5rem;
+            background: var(--c-white);
+            border: var(--border-width) solid var(--c-ink);
+            border-radius: var(--radius-btn);
+            color: var(--c-ink);
+            font-family: var(--font-mono);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+
+        .btn:hover {
+            background: var(--c-ink);
+            color: var(--c-white);
+        }
+        
+        .btn-full {
+            width: 100%;
+        }
+
+        
+        .window-status {
+            height: 40px;
+            border-top: var(--border-width) solid var(--c-ink);
+            background: var(--c-paper);
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            gap: 8px;
+        }
+
+        .scroll-track {
+            flex: 1;
+            height: 24px;
+            border: var(--border-width) solid var(--c-ink);
+            border-radius: 12px;
+            background: var(--c-white);
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 2px;
+        }
+
+        .scroll-thumb {
+            width: 100px;
+            height: 16px;
+            background: var(--c-paper);
+            border: 2px solid var(--c-ink);
+            border-radius: 8px;
+            margin-left: 2px;
+        }
+        
+        .status-arrow {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            border: var(--border-width) solid var(--c-ink);
+            border-radius: var(--radius-btn);
+            background: var(--c-white);
+            outline: none;
+        }
+
+        .form-input:focus {
+            box-shadow: 4px 4px 0 var(--c-ink);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+                align-items: stretch;
+                min-height: 100vh;
+            }
+
+            .os-window {
+                position: fixed !important;
+                left: 0 !important;
+                top: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+                height: 100vh !important;
+                transform: none !important;
+                border-radius: 0;
+                box-shadow: none;
+                z-index: 2000;
+            }
+
+            .os-window.intro-hidden {
+                transform: none !important;
+            }
+
+            .intro-app-icon.persistent {
+                display: none !important;
+            }
+
+            .title-bar {
+                cursor: default;
+                border-radius: 0;
+            }
+
+            .firefox-tabs {
+                min-width: 0;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+
+            .firefox-tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .firefox-tab {
+                min-width: 100px;
+                max-width: 160px;
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
+
+            .firefox-address-bar {
+                padding: 0 8px;
+                gap: 6px;
+                min-height: 44px;
+            }
+
+            .firefox-nav-btn {
+                width: 36px;
+                height: 36px;
+                flex-shrink: 0;
+            }
+
+            .firefox-url-bar {
+                min-width: 0;
+                font-size: 0.8rem;
+                padding: 0 8px;
+            }
+
+            .firefox-url-bar::before {
+                content: 'jchendev.com';
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .window-controls {
+                flex-shrink: 0;
+            }
+
+            .workspace {
+                flex-direction: column;
+                min-height: 0;
+                overflow: hidden;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #d7d7db;
+                padding: 0.75rem;
+                flex-direction: row;
+                overflow-x: auto;
+                overflow-y: hidden;
+                gap: 0.5rem;
+                flex-shrink: 0;
+                min-height: 52px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+
+            .sidebar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-group {
+                flex-direction: row;
+                flex-shrink: 0;
+                gap: 0.5rem;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .nav-item {
+                padding: 6px 10px;
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+
+            .nav-icon {
+                width: 20px;
+                height: 20px;
+                font-size: 0.65rem;
+            }
+
+            .main-view {
+                padding: 1rem 1.25rem;
+                overflow-x: hidden;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: none;
+            }
+
+            .tag-row {
+                gap: 6px;
+            }
+
+            .tag {
+                font-size: 0.65rem;
+                padding: 3px 8px;
+            }
+
+            .about-icons {
+                gap: 0.75rem;
+                margin-top: 0.75rem;
+            }
+
+            .about-icons a {
+                font-size: 1.25rem;
+            }
+
+            .experience-list {
+                gap: 1.25rem;
+                margin-top: 1rem;
+            }
+
+            .experience-item {
+                padding: 1rem;
+            }
+
+            .experience-header {
+                flex-wrap: wrap;
+                gap: 0.35rem 0.5rem;
+            }
+
+            .experience-title {
+                font-size: 1rem;
+            }
+
+            .experience-company,
+            .experience-date {
+                font-size: 0.7rem;
+            }
+
+            .experience-desc,
+            .experience-desc li {
+                font-size: 0.9rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .card-image {
+                height: 140px;
+            }
+
+            .card-body {
+                padding: 1rem;
+            }
+
+            .card-title {
+                font-size: 1rem;
+            }
+
+            .card-desc {
+                font-size: 0.85rem;
+            }
+
+            .stack-content .tag-row {
+                gap: 6px;
+            }
+
+            .stack-category {
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-input {
+                padding: 0.875rem;
+                font-size: 16px;
+            }
+
+            .btn {
+                height: 48px;
+                width: 100%;
+            }
+
+            .window-status {
+                display: none;
+            }
 
 
-				
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch with me</h2>
-							<div class="split style1">
-								<section>
-									<form id="contactForm" action="https://formsubmit.co/JasonYay210@gmail.com" method="POST">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" required />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="email" name="email" id="email" required />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5" required></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><button type="submit" class="button submit">Send Message</button></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>
-											11367, Flushing<br />
-											New York City, USA</span>
-										</li>
-										<li>
-											<h3>School Email</h3>
-											<p>Jc3496(at)(g).rit.edu</p>
-											<h3>Personal Email</h3>
-											<p>JasonYay210(at)gmail.com</p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(347) 749-8(four)73</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/JasonYay210" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/jason-rit/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+            section[id] {
+                margin-top: 2.5rem !important;
+                padding-bottom: 0.5rem;
+            }
 
-			</div>
+            section[id]:first-of-type {
+                margin-top: 0 !important;
+            }
+        }
+        
+        
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--c-white);
+            border-left: 2px solid var(--c-ink);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--c-paper);
+            border: 2px solid var(--c-ink);
+            border-radius: 6px;
+        }
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+        /* Intro overlay: fake desktop + cursor animation */
+        body.intro-active {
+            cursor: none;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				document.getElementById('contactForm').addEventListener('submit', function(event) {
-					event.preventDefault();
-					
-					const form = event.target;
-					const formData = new FormData(form);
-					
-					fetch(form.action, {
-						method: 'POST',
-						body: formData,
-						headers: {
-							'Accept': 'application/json'
-						}
-					}).then(response => {
-						if (response.ok) {
-							alert('Message sent successfully!');
-							form.reset();
-						} else {
-							alert('Oops! There was a problem sending your message. Please try again later.');
-						}
-					}).catch(error => {
-						console.error('Error:', error);
-						alert('Oops! There was a problem sending your message. Please try again later.');
-					});
-				});
-			</script>
-	</body>
-</html>
+        .intro-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background-color: #2c001e;
+            background-image: url("linux_default_image.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            transition: opacity 0.6s ease;
+            pointer-events: none;
+        }
+
+        .intro-overlay::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(119, 33, 111, 0.2) 0%, rgba(44, 0, 30, 0.3) 50%, rgba(233, 84, 32, 0.15) 100%);
+            pointer-events: none;
+        }
+
+        .intro-overlay.intro-done {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .intro-desktop {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .intro-app-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .intro-app-icon.persistent {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 1999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .intro-app-icon.persistent.visible {
+            opacity: 1;
+        }
+
+        .intro-app-icon.intro-clicked {
+            transform: scale(0.92);
+            box-shadow: 3px 3px 0 var(--c-ink);
+        }
+
+        .intro-app-icon-inner {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #0a84ff 0%, #0060df 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .intro-app-icon-inner i {
+            color: inherit;
+        }
+
+        .intro-app-label {
+            font-family: var(--font-sans);
+            font-size: 0.6rem;
+            font-weight: 500;
+            text-align: center;
+            color: #0c0c0d;
+            margin-top: 2px;
+        }
+
+        .intro-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2001;
+            pointer-events: none;
+        }
+
+        .intro-cursor::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M5 3l14 9-6 6-3-3-5 2 2-14z'/%3E%3C/svg%3E") no-repeat center;
+            background-size: 20px 20px;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+        }
+
+        .intro-cursor.intro-cursor-move {
+            animation: introCursorMove 0.8s ease-out forwards;
+        }
+
+        .intro-cursor.intro-cursor-click {
+            animation: introCursorClick 0.2s ease-out forwards;
+        }
+
+        .intro-cursor.intro-cursor-stay {
+            left: 64px !important;
+            top: 52px !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        @keyframes introCursorMove {
+            0% { left: 50%; top: 50%; transform: translate(-50%, -50%); }
+            100% { left: 64px; top: 52px; transform: translate(-50%, -50%); }
+        }
+
+        @keyframes introCursorClick {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(0.85); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+    </style>
+</head>
+<body vid="9" class="intro-active">
+
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-desktop">
+            <div class="intro-app-icon" id="introAppIcon">
+                <div class="intro-app-icon-inner"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
+        <div class="intro-cursor" id="introCursor"></div>
+    </div>
+
+    <div class="os-window intro-hidden" id="osWindow" vid="10">
+        
+        <div class="title-bar" vid="11">
+            <div class="firefox-tabs" vid="12">
+                <div class="firefox-tab active" vid="13">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <span class="firefox-tab-title" vid="15">jchendev.com</span>
+                </div>
+            </div>
+            <div class="window-controls" vid="16">
+                <div class="control-dot" vid="17"></div>
+                <div class="control-dot" vid="18"></div>
+                <div class="control-dot" vid="19"></div>
+            </div>
+        </div>
+
+        <div class="firefox-address-bar" vid="20">
+            <div class="firefox-nav-buttons" vid="21">
+                <button class="firefox-nav-btn" vid="22">←</button>
+                <button class="firefox-nav-btn" vid="23">→</button>
+                <button class="firefox-nav-btn" vid="24">↻</button>
+            </div>
+            <div class="firefox-url-bar" vid="25"></div>
+        </div>
+
+        
+        <div class="workspace" vid="17">
+            
+            <nav class="sidebar" vid="18">
+                <div class="nav-group" vid="19">
+                    <div class="nav-label" vid="20">System</div>
+                    <a href="#about" class="nav-item" vid="21">
+                        <div class="nav-icon" vid="22"><i class="fa-solid fa-user"></i></div>
+                        <span vid="23">About Me</span>
+                    </a>
+                    <a href="#experience" class="nav-item" vid="24">
+                        <div class="nav-icon" vid="25"><i class="fa-solid fa-briefcase"></i></div>
+                        <span vid="26">Experience</span>
+                    </a>
+                    <a href="#projects" class="nav-item" vid="24b">
+                        <div class="nav-icon" vid="25b"><i class="fa-solid fa-folder-open"></i></div>
+                        <span vid="26b">Projects</span>
+                    </a>
+                    <a href="#stack" class="nav-item" vid="27">
+                        <div class="nav-icon" vid="28"><i class="fa-solid fa-code"></i></div>
+                        <span vid="29">Tech Stack</span>
+                    </a>
+                </div>
+                
+                <div class="nav-group" style="margin-top: auto;" vid="30">
+                    <div class="nav-label" vid="31">Connect</div>
+                    <a href="#contact" class="nav-item" vid="32">
+                        <div class="nav-icon" vid="33"><i class="fa-solid fa-envelope"></i></div>
+                        <span vid="34">Email</span>
+                    </a>
+                </div>
+            </nav>
+
+            
+            <main class="main-view" vid="35">
+                <section id="about" vid="36">
+                    <h1 vid="37">Jason Chen</h1>
+                    <p vid="39">
+                        <strong vid="40">Hello, I'm Jason Chen.</strong> I'm a Web &amp; Mobile Computing student at RIT (expected Dec 2026, GPA 3.52). 
+                        I build digital products with clean code and focus on full-stack development, automation, and user experience.
+                    </p>
+                    <div class="tag-row" vid="41">
+                        <span class="tag" vid="42">Flushing, NY</span>
+                        <a href="https://jchendev.com" class="tag" vid="43">jchendev.com</a>
+                        <a href="mailto:JasonYay210@gmail.com" class="tag" vid="45">JasonYay210@gmail.com</a>
+                    </div>
+                    <ul class="about-icons" vid="46">
+                        <li><a href="https://github.com/JasonYay210" class="fa-brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/jason-rit/" class="fa-brands fa-linkedin-in" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+                    </ul>
+                </section>
+
+                <section id="experience" style="margin-top: 4rem;" vid="46">
+                    <h2 vid="47">Experience</h2>
+                    <div class="experience-list" vid="48">
+                        <div class="experience-item" vid="49">
+                            <div class="experience-header" vid="50">
+                                <span class="experience-title" vid="51">Software Engineer</span>
+                                <span class="experience-company" vid="52">Auria Space</span>
+                                <span class="experience-date" vid="53">Jan 2026 – Present</span>
+                            </div>
+                            <p class="experience-desc" vid="54">Acquired Kythera Space Solutions.</p>
+                        </div>
+                        <div class="experience-item" vid="55">
+                            <div class="experience-header" vid="56">
+                                <span class="experience-title" vid="57">Software Engineer Co-op</span>
+                                <span class="experience-company" vid="58">Kythera Space Solutions</span>
+                                <span class="experience-date" vid="59">May 2025 – Dec 2025</span>
+                            </div>
+                            <ul class="experience-desc" vid="60">
+                                <li>Developed and optimized 30+ C++ validation modules for payload and antenna configurations; wrote 5+ Python scripts to automate workflows.</li>
+                                <li>Designed and executed 50+ unit tests (Google Test) and 50+ integration tests (Gauge) for beam visibility, RF performance, and payload rules.</li>
+                                <li>Contributed to full-stack integration using Prisma ORM with TypeScript simulation front-end.</li>
+                                <li>Converted logging from string-based to Pistache JSON-based custom library for better structure and downstream processing.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item" vid="61">
+                            <div class="experience-header" vid="62">
+                                <span class="experience-title" vid="63">Full Stack Engineer Freelance</span>
+                                <span class="experience-company" vid="64">TigerSnackBox</span>
+                                <span class="experience-date" vid="65">Mar 2025 – Present</span>
+                            </div>
+                            <ul class="experience-desc" vid="66">
+                                <li>Developing a C# Unity game from high-fidelity Figma mockups; Scrum Agile with Jira, Slack, Confluence; focus on performance and UX.</li>
+                                <li>Using GitHub Actions for CI/CD; working towards App Store deployment.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item" vid="67">
+                            <div class="experience-header" vid="68">
+                                <span class="experience-title" vid="69">Full Stack Developer Co-op</span>
+                                <span class="experience-company" vid="70">D&amp;D Motor Systems Inc.</span>
+                                <span class="experience-date" vid="71">Sep 2024 – Dec 2024</span>
+                            </div>
+                            <ul class="experience-desc" vid="72">
+                                <li>Led website redesign using survey feedback and Google Analytics; full-stack automation tools; boosted SEO 70%, site efficiency and engagement 40%.</li>
+                                <li>Revamped backend across 75+ pages with PHP, SQL, JavaScript; load times under 2 seconds; optimized data management and server performance.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item" vid="73">
+                            <div class="experience-header" vid="74">
+                                <span class="experience-title" vid="75">Software Engineering Fellowship</span>
+                                <span class="experience-company" vid="76">Headstarter AI</span>
+                                <span class="experience-date" vid="77">Jul 2024 – Sep 2024</span>
+                            </div>
+                            <ul class="experience-desc" vid="78">
+                                <li>Built and deployed 5 AI projects in 5 weeks with React.js, Next.js, Tailwind CSS, Firebase, Vercel, AWS EC2; agile sprints and CI/CD.</li>
+                                <li>Coached by Amazon, Google, Capital One on Agile, CI/CD, git, microservices.</li>
+                                <li>Led 4+ engineering fellows from design to deployment using MVC patterns.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item" vid="79">
+                            <div class="experience-header" vid="80">
+                                <span class="experience-title" vid="81">Full Stack Engineer Freelance</span>
+                                <span class="experience-company" vid="82">Sigmath Multiservices</span>
+                            </div>
+                            <ul class="experience-desc" vid="83">
+                                <li>Developed a React Native app using TypeScript, Firebase, Node.js and Redux, integrating 20+ reusable components to streamline development, enhance scalability, and improve state management.</li>
+                                <li>Designed a 15+ page Figma template to streamline design-to-development handoff, leveraging Trello for task management and following the Scrum process for iterative development and team collaboration.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item" vid="84">
+                            <div class="experience-header" vid="85">
+                                <span class="experience-title" vid="86">AI Writing Evaluator (Tier 2)</span>
+                                <span class="experience-company" vid="87">Outlier</span>
+                            </div>
+                            <ul class="experience-desc" vid="88">
+                                <li>Assess the quality of AI-generated writing based on rubrics such as factuality, completeness, brevity, and grammatical correctness.</li>
+                                <li>Review and provide feedback on the work of other writers.</li>
+                                <li>Create high-quality original responses to prompts to guide the AI model's responses.</li>
+                                <li>Gain experience in the field of AI and contribute to the improvement of AI models.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" style="margin-top: 4rem;" vid="79">
+                    <h2 vid="80">Projects</h2>
+                    <div class="project-grid" vid="81">
+                        <div class="card" vid="82">
+                            <a href="https://github.com/JasonYay210/Stripe-AiFlashcards" class="card-image" vid="83" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/ai_flashcards.jpg" alt="AI Flashcards"></a>
+                            <div class="card-body" vid="84">
+                                <div class="card-title" vid="85">AI Flashcards</div>
+                                <div class="tag-row" vid="86">
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Groq AI</span>
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">MUI</span>
+                                    <span class="tag">Stripe</span>
+                                    <span class="tag">Clerk</span>
+                                </div>
+                                <p class="card-desc" vid="93">Utilized Firebase for real-time database and storage of flashcard decks; leveraged Groq AI to generate personalized flashcards. Responsive front-end with Next.js and MUI. Secure payment via Stripe and Clerk for authentication.</p>
+                            </div>
+                        </div>
+                        <div class="card" vid="94">
+                            <a href="https://colab.research.google.com/drive/19BdYXkiL6oJigvfIQ8Nt64DY3Rh03G_i?usp=sharing" class="card-image" vid="95" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/colab.JPG" alt="AI Algorithm Trading Bot"></a>
+                            <div class="card-body" vid="96">
+                                <div class="card-title" vid="97">AI Algorithm Trading Bot</div>
+                                <div class="tag-row" vid="98">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">LSTM</span>
+                                </div>
+                                <p class="card-desc" vid="104">Developed an AI trading bot using Python, Pandas, and TensorFlow. Uses LSTM and unsupervised learning for stock prediction; results visualized with matplotlib.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://github.com/JasonYay210/customer-support-ai" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/ai_chatbot.jpg" alt="AI Chatbot"></a>
+                            <div class="card-body">
+                                <div class="card-title">AI Chatbot</div>
+                                <div class="tag-row">
+                                    <span class="tag">Groq AI</span>
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">MUI</span>
+                                </div>
+                                <p class="card-desc">Leveraged Groq AI for personalized responses and customizable system prompts. Responsive front-end with Next.js and Material-UI.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://people.rit.edu/jc3496/ISTE340/p2_Jason_Chen/" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/react.JPG" alt="React Website"></a>
+                            <div class="card-body">
+                                <div class="card-title">React Website</div>
+                                <div class="tag-row">
+                                    <span class="tag">React</span>
+                                    <span class="tag">API</span>
+                                    <span class="tag">Material-UI</span>
+                                </div>
+                                <p class="card-desc">Professional website for the iSchool fetching data from web service API via proxy. React hooks for state; Material-UI for interfaces.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.linkedin.com/posts/jason-rit_hackathon-webscraping-puppeteer-activity-7231061223113461760-qd-h/?utm_source=share&utm_medium=member_desktop" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/web_scrapper.jpg" alt="Web Scrapper"></a>
+                            <div class="card-body">
+                                <div class="card-title">Web Scrapper</div>
+                                <div class="tag-row">
+                                    <span class="tag">Web scraping</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                                <p class="card-desc">Implemented web scraper logic for diverse websites. Integrated MongoDB to store and manage scraped data.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://github.com/JasonYay210/Digital-Library" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/digital_library.png" alt="Digital Library"></a>
+                            <div class="card-body">
+                                <div class="card-title">Digital Library</div>
+                                <div class="tag-row">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">JDBC</span>
+                                </div>
+                                <p class="card-desc">Database application for faculty and student researchers with keyword search. Abstract methods for research interests; JDBC with MySQL; SHA-1 password encryption.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.youtube.com/shorts/WvLEp99kt80" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/flutter.JPG" alt="Flutter YouTube App"></a>
+                            <div class="card-body">
+                                <div class="card-title">Flutter YouTube App</div>
+                                <div class="tag-row">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">YouTube API</span>
+                                    <span class="tag">HTTP</span>
+                                </div>
+                                <p class="card-desc">HTTP requests, JSON parsing, youtube_player_flutter plugin. Search, favorites, history. Cross-platform (Android &amp; iOS).</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://github.com/JasonYay210/MVC-Ischool" class="card-image" target="_blank" rel="noopener noreferrer"><img src="portfolio/images/mvc_project.png" alt="MVC Website"></a>
+                            <div class="card-body">
+                                <div class="card-title">MVC Website</div>
+                                <div class="tag-row">
+                                    <span class="tag">MVC</span>
+                                    <span class="tag">C#</span>
+                                    <span class="tag">ASP.NET</span>
+                                    <span class="tag">jQuery</span>
+                                    <span class="tag">Bootstrap</span>
+                                </div>
+                                <p class="card-desc">C# front-end using MVC in Visual Studio, consuming a RESTful web service. jQuery, Bootstrap, and Datatables for UI.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image" style="background: var(--c-teal); display: flex; align-items: center; justify-content: center;"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                            <div class="card-body">
+                                <div class="card-title">American Dream Election System</div>
+                                <div class="tag-row">
+                                    <span class="tag">React</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Tailwind</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Express</span>
+                                </div>
+                                <p class="card-desc">Full-stack election platform for 10K+ voters with real-time results via WebSockets. 3NF PostgreSQL schema; transactions and prepared statements; materialized views and pagination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="stack" style="margin-top: 4rem;" vid="105">
+                    <h2 vid="106">Tech Stack</h2>
+                    <div class="stack-content" vid="107">
+                        <div class="stack-group" vid="108">
+                            <h3 class="stack-category" vid="109">Languages</h3>
+                            <div class="tag-row" vid="110">
+                                <span class="tag" vid="111">C</span>
+                                <span class="tag" vid="112">C++</span>
+                                <span class="tag" vid="113">Python3</span>
+                                <span class="tag" vid="114">Java</span>
+                                <span class="tag" vid="115">HTML5</span>
+                                <span class="tag" vid="116">CSS</span>
+                                <span class="tag" vid="117">JavaScript</span>
+                                <span class="tag" vid="118">TypeScript</span>
+                                <span class="tag" vid="119">SQL</span>
+                                <span class="tag" vid="120">PHP</span>
+                                <span class="tag" vid="121">C#</span>
+                                <span class="tag" vid="122">Swift</span>
+                            </div>
+                        </div>
+                        <div class="stack-group" vid="123" style="margin-top: 2rem;">
+                            <h3 class="stack-category" vid="124">Technology &amp; Tools</h3>
+                            <div class="tag-row" vid="125">
+                                <span class="tag" vid="126">Linux</span>
+                                <span class="tag" vid="127">React</span>
+                                <span class="tag" vid="128">Next.js</span>
+                                <span class="tag" vid="129">Flutter</span>
+                                <span class="tag" vid="130">Tailwind CSS</span>
+                                <span class="tag" vid="131">ASP.NET</span>
+                                <span class="tag" vid="132">Firebase</span>
+                                <span class="tag" vid="133">MySQL</span>
+                                <span class="tag" vid="134">PostgreSQL</span>
+                                <span class="tag" vid="135">MongoDB</span>
+                                <span class="tag" vid="136">Neo4j</span>
+                                <span class="tag" vid="137">Prisma</span>
+                                <span class="tag" vid="138">XML/Schema</span>
+                                <span class="tag" vid="139">YAML</span>
+                                <span class="tag" vid="140">JSON</span>
+                                <span class="tag" vid="141">GitHub Actions</span>
+                            </div>
+                        </div>
+                        <div class="stack-group" vid="142" style="margin-top: 2rem;">
+                            <h3 class="stack-category" vid="143">Software</h3>
+                            <div class="tag-row" vid="144">
+                                <span class="tag" vid="145">VS Code</span>
+                                <span class="tag" vid="146">Visual Studio</span>
+                                <span class="tag" vid="147">Command Line</span>
+                                <span class="tag" vid="148">Docker</span>
+                                <span class="tag" vid="149">FileZilla</span>
+                                <span class="tag" vid="150">GitHub</span>
+                                <span class="tag" vid="151">Colab</span>
+                                <span class="tag" vid="152">Postman</span>
+                                <span class="tag" vid="153">Adobe Photoshop</span>
+                                <span class="tag" vid="154">Adobe Illustrator</span>
+                                <span class="tag" vid="155">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" style="margin-top: 4rem; padding-bottom: 2rem;" vid="86">
+                    <h2 vid="87">Drop a line</h2>
+                    <div class="contact-form-wrap" style="max-width: 400px; margin-top: 1.5rem;" vid="88">
+                        <div class="form-group" vid="89">
+                            <label class="form-label" for="contactSubject" vid="90">Subject</label>
+                            <input type="text" id="contactSubject" class="form-input" value="Project Inquiry" placeholder="Subject" vid="91">
+                        </div>
+                        <div class="form-group" vid="92">
+                            <label class="form-label" for="contactMessage" vid="93">Message</label>
+                            <textarea id="contactMessage" class="form-input form-textarea" rows="4" placeholder="Type your message here..." vid="94"></textarea>
+                        </div>
+                        <button type="button" class="btn" id="contactSendBtn" vid="95">Send Transmission</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var navItems = document.querySelectorAll('.sidebar .nav-item');
+            function setActive() {
+                var hash = window.location.hash || '#about';
+                navItems.forEach(function (a) {
+                    a.classList.toggle('active', (a.getAttribute('href') || '').split('?')[0] === hash);
+                });
+            }
+            setActive();
+            window.addEventListener('hashchange', setActive);
+        })();
+
+        (function () {
+            var MY_EMAIL = 'JasonYay210@gmail.com';
+            var subjectEl = document.getElementById('contactSubject');
+            var messageEl = document.getElementById('contactMessage');
+            var btn = document.getElementById('contactSendBtn');
+            if (!btn || !subjectEl || !messageEl) return;
+
+            function openCompose() {
+                var subject = (subjectEl.value || 'Project Inquiry').trim();
+                var body = (messageEl.value || '').trim();
+                var encodedSubject = encodeURIComponent(subject);
+                var encodedBody = encodeURIComponent(body);
+                var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(MY_EMAIL) + '&su=' + encodedSubject + '&body=' + encodedBody;
+                window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+            }
+
+            btn.addEventListener('click', function () {
+                openCompose();
+            });
+        })();
+
+        (function () {
+            var introOverlay = document.getElementById('introOverlay');
+            var introCursor = document.getElementById('introCursor');
+            var introAppIcon = document.getElementById('introAppIcon');
+            var osWindow = document.getElementById('osWindow');
+            var body = document.body;
+
+            function positionWindowAfterIntro() {
+                var isMobile = window.matchMedia('(max-width: 768px)').matches;
+                if (isMobile) {
+                    osWindow.style.left = '0';
+                    osWindow.style.top = '0';
+                    osWindow.style.right = '0';
+                    osWindow.style.bottom = '0';
+                    osWindow.style.width = '100%';
+                    osWindow.style.height = '100vh';
+                    osWindow.style.maxWidth = 'none';
+                    osWindow.style.transform = 'none';
+                } else {
+                    var r = osWindow.getBoundingClientRect();
+                    osWindow.style.left = (window.innerWidth - r.width) / 2 + 'px';
+                    osWindow.style.top = (window.innerHeight - r.height) / 2 + 'px';
+                    osWindow.style.transform = 'none';
+                }
+            }
+
+            function runIntro() {
+                if (!introOverlay || !introCursor || !osWindow) return;
+                introCursor.classList.add('intro-cursor-move');
+                setTimeout(function () {
+                    introCursor.classList.remove('intro-cursor-move');
+                    introCursor.classList.add('intro-cursor-click');
+                    introCursor.classList.add('intro-cursor-stay');
+                    introAppIcon.classList.add('intro-clicked');
+                }, 900);
+                setTimeout(function () {
+                    introAppIcon.classList.remove('intro-clicked');
+                    var persistentIcon = introAppIcon.cloneNode(true);
+                    persistentIcon.classList.add('persistent');
+                    persistentIcon.classList.add('visible');
+                    persistentIcon.id = 'persistentAppIcon';
+                    body.appendChild(persistentIcon);
+                    introOverlay.classList.add('intro-done');
+                    osWindow.classList.remove('intro-hidden');
+                    body.classList.remove('intro-active');
+                    positionWindowAfterIntro();
+                }, 1200);
+                setTimeout(function () {
+                    if (introOverlay.parentNode) introOverlay.parentNode.removeChild(introOverlay);
+                }, 1900);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', runIntro);
+            } else {
+                runIntro();
+            }
+
+            var titleBar = document.querySelector('.title-bar');
+            var addressBar = document.querySelector('.firefox-address-bar');
+            if (titleBar) {
+                var dragging = false;
+                var startX, startY, startLeft, startTop;
+
+                function startDrag(e) {
+                    if (e.button !== 0) return;
+                    if (window.matchMedia('(max-width: 768px)').matches) return;
+                    dragging = true;
+                    var r = osWindow.getBoundingClientRect();
+                    startX = e.clientX;
+                    startY = e.clientY;
+                    startLeft = r.left;
+                    startTop = r.top;
+                    osWindow.style.left = startLeft + 'px';
+                    osWindow.style.top = startTop + 'px';
+                    osWindow.style.transform = 'none';
+                }
+
+                titleBar.addEventListener('mousedown', startDrag);
+                if (addressBar) {
+                    addressBar.addEventListener('mousedown', startDrag);
+                }
+
+                document.addEventListener('mousemove', function (e) {
+                    if (!dragging) return;
+                    var dx = e.clientX - startX;
+                    var dy = e.clientY - startY;
+                    osWindow.style.left = (startLeft + dx) + 'px';
+                    osWindow.style.top = (startTop + dy) + 'px';
+                });
+
+                document.addEventListener('mouseup', function () {
+                    dragging = false;
+                });
+            }
+
+            window.addEventListener('resize', function () {
+                if (document.getElementById('osWindow') && !document.querySelector('.os-window.intro-hidden')) {
+                    var isMobile = window.matchMedia('(max-width: 768px)').matches;
+                    if (isMobile) {
+                        osWindow.style.left = '0';
+                        osWindow.style.top = '0';
+                        osWindow.style.right = '0';
+                        osWindow.style.bottom = '0';
+                        osWindow.style.width = '100%';
+                        osWindow.style.height = '100vh';
+                        osWindow.style.maxWidth = 'none';
+                        osWindow.style.transform = 'none';
+                    }
+                }
+            });
+        })();
+    </script>
+</body></html>
