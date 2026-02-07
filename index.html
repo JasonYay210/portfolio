@@ -1,7 +1,8 @@
 <html lang="en" vid="0"><head vid="1">
     <meta charset="UTF-8" vid="2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
-    <title vid="4">jchendev.com // System Profile</title>
+    <title vid="4">jchendev.com</title>
+    <link id="favicon" rel="icon" href="icons8-coding-48.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com" vid="5">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="6">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" vid="7">
@@ -54,7 +55,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(119, 33, 111, 0.2) 0%, rgba(44, 0, 30, 0.3) 50%, rgba(233, 84, 32, 0.15) 100%);
             pointer-events: none;
             z-index: 999;
         }
@@ -204,46 +204,36 @@
 
         .window-controls {
             display: flex;
-            gap: 6px;
-            padding: 0 8px;
-            align-items: center;
+            margin-left: auto;
+            height: 100%;
+            align-items: stretch;
         }
 
         .control-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #5a5a5e;
+            width: 46px;
+            height: 100%;
+            min-height: 40px;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            color: #e5e5e5;
             cursor: pointer;
-            transition: background 0.2s ease;
+            transition: background 0.15s ease, color 0.15s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1;
         }
 
         .control-dot:hover {
-            background: #737373;
-        }
-
-        .control-dot:nth-child(1) {
-            background: #ff5f57;
-        }
-
-        .control-dot:nth-child(1):hover {
-            background: #ff3b30;
-        }
-
-        .control-dot:nth-child(2) {
-            background: #ffbd2e;
-        }
-
-        .control-dot:nth-child(2):hover {
-            background: #ff9500;
-        }
-
-        .control-dot:nth-child(3) {
-            background: #28ca42;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .control-dot:nth-child(3):hover {
-            background: #1db954;
+            background: #e81123;
+            color: #fff;
         }
 
         
@@ -1114,9 +1104,9 @@
                 </div>
             </div>
             <div class="window-controls" vid="16">
-                <div class="control-dot" vid="17"></div>
-                <div class="control-dot" vid="18"></div>
-                <div class="control-dot" vid="19"></div>
+                <div class="control-dot" vid="17" title="Minimize">&#x2013;</div>
+                <div class="control-dot" vid="18" title="Maximize">&#x25A1;</div>
+                <div class="control-dot" vid="19" title="Close">&#x2715;</div>
             </div>
         </div>
 
@@ -1457,7 +1447,7 @@
                             <label class="form-label" for="contactMessage" vid="93">Message</label>
                             <textarea id="contactMessage" class="form-input form-textarea" rows="4" placeholder="Type your message here..." vid="94"></textarea>
                         </div>
-                        <button type="button" class="btn" id="contactSendBtn" vid="95">Send Transmission</button>
+                        <button type="button" class="btn" id="contactSendBtn" vid="95">Send</button>
                     </div>
                 </section>
             </main>
@@ -1481,22 +1471,64 @@
 
         (function () {
             var MY_EMAIL = 'JasonYay210@gmail.com';
+            var COOLDOWN_SEC = 10;
+            var MIN_MESSAGE_LEN = 5;
+            var MAX_SENDS_PER_SESSION = 3;
             var subjectEl = document.getElementById('contactSubject');
             var messageEl = document.getElementById('contactMessage');
             var btn = document.getElementById('contactSendBtn');
             if (!btn || !subjectEl || !messageEl) return;
 
+            var cooldownUntil = 0;
+            var btnOriginalText = btn.textContent;
+            var sendCount = parseInt(sessionStorage.getItem('contactSendCount') || '0', 10);
+
             function openCompose() {
                 var subject = (subjectEl.value || 'Project Inquiry').trim();
                 var body = (messageEl.value || '').trim();
+                if (body.length < MIN_MESSAGE_LEN) return;
                 var encodedSubject = encodeURIComponent(subject);
                 var encodedBody = encodeURIComponent(body);
-                var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(MY_EMAIL) + '&su=' + encodedSubject + '&body=' + encodedBody;
+                var gmailUrl = 'https://mail.google.com/mail/?view=cm&to=' + encodeURIComponent(MY_EMAIL) + '&su=' + encodedSubject + '&body=' + encodedBody;
                 window.open(gmailUrl, '_blank', 'noopener,noreferrer');
             }
 
+            function startCooldown() {
+                cooldownUntil = Date.now() + COOLDOWN_SEC * 1000;
+                btn.disabled = true;
+                var iv = setInterval(function () {
+                    if (sendCount >= MAX_SENDS_PER_SESSION) return;
+                    var left = Math.ceil((cooldownUntil - Date.now()) / 1000);
+                    if (left <= 0) {
+                        clearInterval(iv);
+                        btn.disabled = false;
+                        btn.textContent = btnOriginalText;
+                        return;
+                    }
+                    btn.textContent = 'Wait ' + left + 's';
+                }, 200);
+            }
+
+            function applySessionLimit() {
+                if (sendCount >= MAX_SENDS_PER_SESSION) {
+                    btn.disabled = true;
+                    btn.textContent = 'Limit reached — try again later';
+                }
+            }
+            applySessionLimit();
+
             btn.addEventListener('click', function () {
+                if (btn.disabled) return;
+                if (sendCount >= MAX_SENDS_PER_SESSION) return;
+                var body = (messageEl.value || '').trim();
+                if (body.length < MIN_MESSAGE_LEN) return;
                 openCompose();
+                sendCount += 1;
+                sessionStorage.setItem('contactSendCount', String(sendCount));
+                startCooldown();
+                if (sendCount >= MAX_SENDS_PER_SESSION) {
+                    setTimeout(applySessionLimit, COOLDOWN_SEC * 1000);
+                }
             });
         })();
 
